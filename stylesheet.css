@@ -1,0 +1,242 @@
+body{
+	background-color:#088014;
+}
+	
+.spot{		
+		position:absolute;
+		width:500px;
+		height: 100px;
+		left:20%;
+}
+
+#dealer-spot{
+	top:50px;
+}
+
+#player{
+	bottom:100px;
+	
+}
+
+.placemarker{
+	border:1px solid #8CD464;
+	width: 75px;
+	height:100px;
+	border-radius:4px;
+	position: relative;
+	margin-right:5px;
+	display:none;
+}
+	
+
+.card{
+	border:1px solid black;
+	width: 75px;
+	height:100px;
+	border-radius:4px;
+	position: relative;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.card .number{
+	
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	display:inline-block;
+	font-family:Segoe UI;
+	font-size: 15px;
+	text-align: center;
+	
+}
+
+.face-down .number{
+	display: none;
+}
+
+.card .number-bottom{
+	bottom:0px;
+	right: 0px;
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.deck{
+	position: absolute;
+	right: -15%;
+	top: 10px;
+	box-shadow: 1px 3px 0px #CCC;
+	box-shadow: 3px 3px 0px #CCC;
+}
+
+.restart{
+	height: 25px;
+	width: 100px;
+	position: absolute;
+	right: -45%;
+	top:-10px;
+	display: none;
+	background-color:#140880;
+}
+
+.flip{
+	height: 25px;
+	width: 100px;
+	position: absolute;
+	right: -45%;
+	top:20px;
+	display: none;
+	background-color:#140880;
+}
+
+
+.face-down{
+	background-color:#801408;
+}
+
+
+.face-up{
+	background-color:#FAFAFA;
+}
+
+
+.icon{
+	position: absolute;
+	top:0px;
+	left:20px;
+	z-index: 99;
+}
+
+.face-down .icon{
+	display: none;
+}
+
+.diamond{
+	width:35px;
+	height:70px;
+	background: url(icons.png) 0,0;
+	background-size:400%;
+	background-position: 5px 13px;
+	background-repeat: no-repeat;
+}
+
+.heart{
+	width:35px;
+	height:70px;
+	background: url(icons.png) 0,0;
+	background-size:400%;
+	background-position: -35px 15px;
+	background-repeat: no-repeat;
+}
+
+.spade{
+	width:35px;
+	height:70px;
+	background: url(icons.png) 0,0;
+	background-size:400%;
+	background-position: -70px 15px;
+	background-repeat: no-repeat;
+}
+
+.club{
+	width:35px;
+	height:70px;
+	background: url(icons.png) 0,0;
+	background-size:400%;
+	background-position: -107px 15px;
+	background-repeat: no-repeat;
+}
+
+
+
+.action{
+	
+	
+	display:none;
+	border-radius: 5px;
+	margin: 25px 25px 25px 0px;
+
+	text-align: center;
+	font-family: Segoe UI;
+	
+	font-weight:100;
+	color: white;
+}
+
+.decision{
+	height: 30px;
+	width: 150px;
+	float:left;
+	left: 15%;
+	font-size:20px;
+	background-color:#140880;
+	display:none;
+}
+
+.new-deal{
+	position: absolute;
+	height: 40px;
+	width: 300px;
+	background-color: #140880;
+	font-size:25px;
+	top: 40%;
+	left: 25%;
+	display:none;
+
+}
+
+.result{
+	position: absolute;
+	text-align:center;
+	top: 20%;
+	left:27%;
+	font-size:60px;
+	font-family: Segoe UI;
+	font-weight: lighter;
+	color: white;
+	display:none;
+}
+
+#bust{
+	left: 30%;
+}
+
+.action:hover{
+	opacity:0.75;
+	cursor: pointer;
+}
+
+.display{
+	display:inline;
+}
+
+.display2{
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+/*  	Rotation 	*/		/*  	Rotation 	*/		/*  	Rotation 	*/		
+
+.box_rotate {
+  -webkit-transform: rotate(1080deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(1080deg);  /* Firefox 3.5-15 */
+      -ms-transform: rotate(1080deg);  /* IE 9 */
+        -o-transform: rotate(1080deg);  /* Opera 10.50-12.00 */
+         transform: rotate(1080deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
+}
+.box_transition {
+  -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+}
